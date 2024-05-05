@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="page-container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar bgColor1">
+            <h1 id="title"><img src="imgs/dashboard-icon.png" alt=""> Dashboard</h1>
+            <div class="sidebar-groups">
+                <div class="sidebar-first-group">
+                        <a href="" onclick="return false"><img src="imgs/home-icon.png" alt="" class="sidebar-icons">Home</a>
+                        <a href="" onclick="return false"><img src="imgs/profile-icon.png" alt="" class="sidebar-icons">Profile</a>
+                        <a href="" onclick="return false"><img src="imgs/chat-icon.png" alt="" class="sidebar-icons">Messagges</a>
+                        <a href="" onclick="return false"><img src="imgs/history-icon.png" alt="" class="sidebar-icons">History</a>
+                        <a href="" onclick="return false"><img src="imgs/tasks-icon.png" alt="" class="sidebar-icons">Tasks</a>
+                        <a href="" onclick="return false"><img src="imgs/group-icon.png" alt="" class="sidebar-icons">Communities</a>
+                </div>
+                <div class="sidebar-second-group">
+                    <a href="" onclick="return false"><img src="imgs/settings-icon.png" alt="" class="sidebar-icons">Settings</a>
+                    <a href="" onclick="return false"><img src="imgs/help-icon.png" alt="" class="sidebar-icons">Support</a>
+                    <a href="" onclick="return false"><img src="imgs/privacy-icon.png" alt="" class="sidebar-icons">Privacy</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <div class="header bgColor1">
+            <div class="header-first-line">
+                <ul>
+                   <li><p id="greeting">Hi Sir,</p></li>
+                    <li><p id="name">Christian Darenzo</p>  </li>
+                </ul>
+                <div class="header-first-line-flex">
+                    <img id="notification-icon" src="imgs/notification-icon.png" alt="" class="icons">
+                    <ul>
+                        <li><p id="username">@chris</p></li>
+                        <li><p id="role">Admin</p></li>
+                    </ul>
+                    <img id="user-logo" src="imgs/user-icon.png" alt="">
+                </div>  
+            </div>
+            <div class="header-second-line">
+                <label for="searchbar"><img src="imgs/search-icon2.png" alt="" class="icons"></label>
+                <input id="searchbar" type="searchbar" placeholder="Search...">
+                <button id="new-btn">New</button>
+                <button id="upload-btn">Upload</button>
+                <button id="share-btn">Share</button>
+            </div>
+        </div>
+
+        <!-- MAIN-CONTENT -->
+        <div class="main-content">
+            <span id="subtitle1">Your projects</span>
+            <span id="subtitle2">Tasks</span>
+            <span id="subtitle3">Stats</span>
+            <div class="main-content-grid">
+                <a href="https://chry21.github.io/Rock-Paper-Scissors/"><img src="imgs/rock-paper-scissors.png" alt=""></a>
+                <a href="https://chry21.github.io/calculator/"><img src="imgs/calculator.png" alt=""></a>
+                <div class="tasksDiv bgColor1">
+                    <div class="completedTasks"><p>1. Complete Fundamentals</p></div>
+                    <div class="completedTasks"><p>2. Start Full Stack Js</p></div>
+                    <div class="completedTasks"><p>3. Complete Intermediate HTML and CSS</p></div>
+                    <div><p>4. Complete JavaScript</p></div>
+                    <div><p>5. Complete Advanced HTML and CSS</p></div>
+                    <div><p>6. Complete NodeJS</p></div>
+                    <div><p>7. Complete Getting Hired</p></div>
+                </div>
+                <a href="https://chry21.github.io/Etch-a-sketch/"><img src="imgs/etch-a-sketch.png" alt=""></a>
+                <a href="https://chry21.github.io/sign-up/"><img src="imgs/talk.png" alt=""></a>
+                <div class="statsDiv">
+                    <div class="stats completed bgColor1" >
+                        <h2>Completed Tasks</h2>
+                        <p>43%</p>
+                    </div>
+                    <div class="stats unitialized bgColor1">
+                        <h2>Unitialized Tasks</h2>
+                        <p>57%</p>
+                    </div>
+                    <div class="stats in-progress bgColor1">
+                        <h2>In Progress Tasks</h2>
+                        <p>1</p>
+                    </div>
+                    
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>        
+
+
+                   <!-- <div class="completed">
+                        <h3>Completed Tasks</h3>  
+                        <p>3</p>                 
+                    </div>
+                    <div>
+                        <h3 class="in-progress">In Progress Task</h3>
+                        <p>1</p>
+                    </div>
+                    <div>
+                        <h3 class="unitialized">Unitialized Tasks</h3>
+                        <p>3</p>-->
